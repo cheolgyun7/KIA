@@ -1,0 +1,483 @@
+
+#s1.section{
+    height: 969px;
+}
+.m-nav-header {
+    display: none;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgb(8, 8, 8); */
+  }
+  .m-nav__hamBtn {
+    width: 50px;
+    height: 50px;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+  .m-nav__hamBtn-icon {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  .m-nav__hamBtn-icon,
+  .m-nav__hamBtn-icon span {
+    display: inline-block;
+    transition: all 0.4s;
+    box-sizing: border-box;
+  }
+  .m-nav__hamBtn-icon span {
+    position: absolute;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background-color: #f1f1f1;
+  }
+  .m-nav__hamBtn-icon span:first-child {
+    top: 0;
+  }
+  .m-nav__hamBtn-icon span:nth-child(2) {
+    top: 10px;
+  }
+  .m-nav__hamBtn-icon span:last-child {
+    bottom: 0;
+  }
+  /* hamBtn - x자 애니메이션 (접혔다 펴지기)*/
+.m-nav__hamBtn-icon span:nth-of-type(1) {
+    -webkit-animation: menu-bar-line-ani 0.75s forwards;
+    animation: menu-bar-line-ani 0.75s forwards;
+  }
+  @-webkit-keyframes menu-bar-line-ani {
+    0% {
+      -webkit-transform: translateY(10px) rotate(45deg);
+    }
+    50% {
+      -webkit-transform: translateY(10px) rotate(0);
+    }
+    100% {
+      -webkit-transform: translateY(0) rotate(0);
+    }
+  }
+  @keyframes menu-bar-line-ani {
+    0% {
+      transform: translateY(10px) rotate(45deg);
+    }
+    50% {
+      transform: translateY(10px) rotate(0);
+    }
+    100% {
+      transform: translateY(0) rotate(0);
+    }
+  }
+  .m-nav__hamBtn-icon span:nth-of-type(2) {
+    transition: all 0.25s 0.25s;
+    opacity: 1;
+  }
+  .m-nav__hamBtn-icon span:nth-of-type(3) {
+    -webkit-animation: menu-bar-line-ani-2 0.75s forwards;
+    animation: menu-bar-line-ani-2 0.75s forwards;
+  }
+  @-webkit-keyframes menu-bar-line-ani-2 {
+    0% {
+      -webkit-transform: translateY(-10px) rotate(-45deg);
+    }
+    50% {
+      -webkit-transform: translateY(-10px) rotate(0);
+    }
+    100% {
+      -webkit-transform: translateY(0) rotate(0);
+    }
+  }
+  @keyframes menu-bar-line-ani-2 {
+    0% {
+      transform: translateY(-10px) rotate(-45deg);
+    }
+    50% {
+      transform: translateY(-10px) rotate(0);
+    }
+    100% {
+      transform: translateY(0) rotate(0);
+    }
+  }
+  .m-nav__hamBtn-icon.active span:nth-of-type(1) {
+    -webkit-animation: active-menu-bar-line-ani 0.75s forwards;
+    animation: active-menu-bar-line-ani 0.75s forwards;
+  }
+  @-webkit-keyframes active-menu-bar-line-ani {
+    0% {
+      -webkit-transform: translateY(0) rotate(0);
+    }
+    50% {
+      -webkit-transform: translateY(10px) rotate(0);
+    }
+    100% {
+      -webkit-transform: translateY(10px) rotate(45deg);
+    }
+  }
+  @keyframes active-menu-bar-line-ani {
+    0% {
+      transform: translateY(0) rotate(0);
+    }
+    50% {
+      transform: translateY(10px) rotate(0);
+    }
+    100% {
+      transform: translateY(10px) rotate(45deg);
+    }
+  }
+  .m-nav__hamBtn-icon.active span:nth-of-type(2) {
+    opacity: 0;
+  }
+  .m-nav__hamBtn-icon.active span:nth-of-type(3) {
+    -webkit-animation: active-menu-bar-line-ani-2 0.75s forwards;
+    animation: active-menu-bar-line-ani-2 0.75s forwards;
+  }
+  @-webkit-keyframes active-menu-bar-line-ani-2 {
+    0% {
+      -webkit-transform: translateY(0) rotate(0);
+    }
+    50% {
+      -webkit-transform: translateY(-10px) rotate(0);
+    }
+    100% {
+      -webkit-transform: translateY(-10px) rotate(-45deg);
+    }
+  }
+  @keyframes active-menu-bar-line-ani-2 {
+    0% {
+      transform: translateY(0) rotate(0);
+    }
+    50% {
+      transform: translateY(-10px) rotate(0);
+    }
+    100% {
+      transform: translateY(-10px) rotate(-45deg);
+    }
+  }
+   /*  */
+
+header{
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    padding-top:20px;
+}
+.wide_inner_box{
+    max-width:1920px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    position: relative;
+    /* background-color: green; */
+}
+.kia_logo{
+    float: left;
+    margin:10px 20px;
+    width:120px;
+}
+.kia_logo img{
+    width:100%;
+}
+/* 모바일 아이콘들 */
+/* 햄버거버튼 pc에서 안나오게 */
+.kia_ham{
+    display: none;
+}
+.kia_m_logo{
+    display: none;
+}
+.kia_m_icon{
+    display: none;
+}
+
+.icon_list{
+    position: absolute;
+    right:10px;
+    top:10px; 
+}
+.icon_list>li{
+    float: left;
+    margin-left:15px;
+}
+
+/* nav hover */
+nav{
+    font-size: 1.5rem;
+    text-align: center;
+}
+#menu{
+    display: inline-block;
+    /* text-align: center; */
+    position: relative;
+}
+#menu>li{
+    padding:0px 60px;
+    float:left;
+    font-size: 1.3rem;
+    box-sizing: border-box;
+    color: #000;
+    /* background-color: red; */
+}
+#menu>li>a{
+    display: block;
+	text-decoration:none;
+	color:#f1f1f1;
+    line-height: 50px;
+    margin-bottom:20px;
+}
+#menu li.on a:hover{
+	color: #e4bb63;
+}
+
+#menu>li:hover>a,
+#menu>li.on>a{
+    color: #e4bb63;
+    transition: .5s;
+}
+#menu>li:hover>.kia_sub_menu1{
+    display: block;
+}
+
+/* nav hover */
+.kia_hover{
+    position: absolute;
+    left: -90px;
+    bottom:0;
+    transition: all 3s 2s;
+    /* display: none; */
+}
+.kia_sub_menu1{
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    z-index: 100;
+    display: none;
+    left:0;
+    top:70px;
+}
+.kia_sub_menu_bg{
+    max-width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: white;
+    position: relative;
+    padding:50px 30px;
+}
+.kia_sub_menu_title{
+    text-align: center;
+    width:20%;
+    float:left;
+    box-sizing: border-box;
+}
+.kia_sub_menu_list{
+    width: 80%;
+    /* height: 100%; */
+    float:left;
+}
+.kia_sub_menu_title li{
+    margin: 0 0 1rem;
+   
+    line-height: 3;
+}
+.kia_sub_menu_title li a{
+    display: block;
+    font-family: "KIA_MortorsMedium",sans-serif;
+    font-size: 1.1rem;
+    color: #f1f1f1;
+    background:black;
+    padding: 5px 0;
+}
+.kia_sub_car{
+    width: 100%;
+    height: 100%;
+    /* margin-top: 30px; */
+    /* display: none; */
+}
+.kia_sub_car:first-of-type{
+    z-index: 10;
+    display: block;
+}
+.kia_sub_car:nth-of-type(2){
+    /* display: none; */
+}
+
+.kia_sub_car_all{
+    float:left;   
+    margin-left: 10px;
+    width:30%;
+    background: #f6f3f2;
+    border-left: 1px solid #ddd;
+    position: relative;
+    box-sizing: border-box;
+}
+.kia_sub_car_box{
+    /* width: 100%;
+    height: 60%;
+    overflow: hidden;
+    position: relative; */
+}
+.kia_sub_car_box img{
+   width:100%;
+  
+}
+.kia_sub_car_btn p{
+    text-align: center;
+    color: rgb(50, 50, 168);
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 30px 0;
+}
+.kia_sub_car_btn p:last-of-type{
+    text-align: center;
+    color: #111;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.kia_sub_car_btn strong{
+   display: block;
+}
+.kia_sub_car_btn span{
+    display: inline-block;
+    background-color: #002c5e;
+    padding: 5px 25px 10px;
+    margin-bottom: 10px;
+}
+.kia_sub_car_all>.kia_sub_car_btn>span a{
+    font-size: 1rem;
+    color: #f1f1f1;
+}
+/* nav hover 소메뉴: RV */
+.kia_sub_car:last-of-type>.kia_sub_car_all{
+    width: 25%;
+}
+/* ======================== HEADER끝 ==================================== */
+
+/* ======================== MAPWRAP   ==================================== */
+
+.kia_mapWrap{
+    height: 600px;
+    position: relative;
+    /* background-color: #111; */
+}
+.kia_motor{
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    background-color: rgb(141, 42, 42);
+    padding: 50px;
+    z-index: 1000;
+}
+#map{
+    width: 100%;
+    height: 100%;
+}
+
+/* ======================== MAPWRAP끝   ==================================== */
+
+/* ======================== FOOTER   ==================================== */
+#kia_foot{
+    background-color: #05141f;
+    font-weight: lighter;
+    color: #f1f1f1;
+}
+.kia_foot_box{
+    max-width: 1260px;
+    margin: 0 auto;
+    position: relative;
+}
+.kia_kind{
+    float: left;
+    font-size: 1.6rem;
+    color: #f2f2f2;
+}
+.kia_kind_list{
+   
+    margin-top: 3%;
+}
+.kia_kind_list li{
+    float: left;
+    padding: 0px 20px;
+    border-left: 1px solid rgba(92, 90, 88, 0.5);
+    text-align: center;
+}
+
+.kia_kind_list li a{
+    font-size: 1.2rem;
+    line-height: 2rem;
+    font-weight: lighter;
+    color: #f2f2f2;
+    display: block;
+}
+.kia_kind_list li a:hover{
+    color: #e4bb63;
+}
+.kia_kind_2{
+   
+    padding: 30px 0;
+}
+.kia_kind_2 li{
+    float: left;
+    margin-right: 12%;
+}
+.kia_kind_2 li a{
+    font-size: 1.3rem;
+    color: #f2f2f2;
+}
+.kia_kind_3{
+  
+    padding: 30px 0;
+}
+.kia_kind_3 li{
+    float: left;
+    margin-right: 8%;
+}
+.kia_kind_3 li a{
+    color: #f2f2f2;
+}
+.kia_foot_1 p{
+    font-size: 1rem;
+}
+.kia_sns_box{
+    padding: 20px;
+}
+.kia_sns{
+   display: flex;
+   justify-content: center;
+   
+}
+.kia_sns span{
+    /* color: #f1f1f1; */
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.kia_sns li{
+   margin:0 10px;
+}
+
+.familysite{
+    padding: 30px 0;
+    position: absolute;
+    right: 0;
+}
+.kia_foot_logo{
+    padding: 40px 0;
+}
+.kia_foot_logo a{
+    display: block;
+}
+.kia_foot_logo span{
+    margin-top: 10px;
+    color: #f1f1f1;
+    display: block;
+    text-align: center;
+}
+.kia_foot_logo img{
+    position: relative;
+    margin-top: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* ============================ FOOTER 끝 ===================================== */

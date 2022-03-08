@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KIA자동차</title>
+    <link rel="stylesheet" href="css/kia_reset.css">
+    <link rel="stylesheet" href="css/kia_animation.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/kia_style.css">
+    <link rel="shortcut icon" href="image/intro__.png">
+    <meta property="og:title" content="KIA">
+    <meta property="og:url" content="http://cjfrbs14.dothome.co.kr/kia">
+    <meta property="og:image" content="http://cjfrbs14.dothome.co.kr/kia/image/og.jpg">
+    <meta property="og:description" content="기아 자동차에서 새로움과 혁신을 찾다">
+    <script src="jquery/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="jquery/kia.js"></script>
+    <!-- <script src="jquery/kia2.js"></script> -->
+
+</head>
+
+<body>
+    <header>
+        <div class="wide_inner_box clear">
+            <h1 class="kia_logo">
+                <a href="#void"><img src="image/kia_logo.png" alt="kia로고"></a>
+            </h1>
+            <!-- 모바일 아이콘들 -->
+            <a class="kia_m_logo" href="#void"><img src="image/m_kia_logo.png" alt="kia모바일로고"></a>
+            <a class="kia_ham" href="#void"><img src="image/kia_ham.png" alt="kia햄버거버튼"></a>
+            <a class="kia_m_icon" href="kia_login.html"><img src="image/m_kia_icon.png" alt="kia_login페이지아이콘"></a>
+            <!-- ------------- -->
+
+            <ul class="m-nav-header">
+                <li class="m-nav__hamBtn">
+                    <a class="m-nav__hamBtn-icon" href="#void">
+                        <span class="hamBtn-1"></span>
+                        <span class="hamBtn-2"></span>
+                        <span class="hamBtn-3"></span>
+                    </a>
+                </li>
+            </ul>
+            <nav>
+                <h2 class="blind"></h2>
+                <ul id="menu" class="clear">
+                    <li class="kia_sub">
+                        <a href="#s2">모델</a>
+                        <div class="kia_sub_menu1">
+                            <div class="kia_sub_menu_bg">
+                                <div class="kia_sub_menu_title">
+                                    <ul class="kia_sub_title">
+                                        <li><a href="#void">RV</a></li>
+                                        <li><a href="#void">승용</a></li>
+                                        <li><a href="#void">상용/택시/버스</a></li>
+                                    </ul>
+                                </div>
+                                <div class="kia_sub_menu_list ">
+                                    <div class="kia_sub_car clear">
+                                        <div class="kia_sub_car_all">
+                                            <strong>Sportage</strong>
+                                            <div class="kia_sub_car_box">
+                                                <img src="image/hover_sportage.png" alt="스포티지">
+                                            </div>
+                                            <div class="kia_sub_car_btn">
+                                                <p>Save Auto 30만</p>
+                                                <p>기아포인트 적립(1/2/3/4회 기준) 7/14/21/28만</p>
+                                                <span><a href="#void">견적내기</a></span>
+                                                <span><a href="#void">시승신청</a></span>
+                                            </div>
+                                        </div>
+                                        <div class="kia_sub_car_all">
+                                            <strong>Carnival</strong>
+                                            <div class="kia_sub_car_box">
+                                                <img src="image/hover_carnival.png" alt="카니발">
+                                            </div>
+                                            <div class="kia_sub_car_btn">
+                                                <p>Save Auto 30만/50만</p>
+                                                <p>기아포인트 적립(1/2/3회 기준) 10/20/30만</p>
+                                                <span><a href="#void">견적내기</a></span>
+                                                <span><a href="#void">시승신청</a></span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="kia_sub_car">
+                                        <div class="kia_sub_car_all">
+                                            <strong>Stinger</strong>
+                                            <div class="kia_sub_car_box">
+                                                <img src="image/hover_stinger.png" alt="스팅어">
+                                            </div>
+                                            <div class="kia_sub_car_btn">
+                                                <p>Save Auto 30만/50만</p>
+                                                <p>기아포인트 적립(1/2/3/4회 기준) 10/20/30/40만</p>
+                                                <span><a href="#void">견적내기 </a></span>
+                                                <span><a href="#void">시승신청 </a></span>
+                                            </div>
+                                        </div>
+                                        <div class="kia_sub_car_all">
+                                            <strong>Sorento</strong>
+                                            <div class="kia_sub_car_box">
+                                                <img src="image/hover_sorento.png" alt="쏘렌토">
+                                            </div>
+                                            <div class="kia_sub_car_btn">
+                                                <p>Save Auto 15만</p>
+                                                <p>기아포인트 적립(1/2/3회 기준) 5/10/15만</p>
+                                                <span><a href="#void">견적내기 </a></span>
+                                                <span><a href="#void">시승신청 </a></span>
+                                            </div>
+                                        </div>
+                                        <div class="kia_sub_car_all">
+                                            <strong>Ray</strong>
+                                            <div class="kia_sub_car_box">
+                                                <img src="image/hover_ray.png" alt="카니발">
+                                            </div>
+                                            <div class="kia_sub_car_btn">
+                                                <p>Save Auto 30만</p>
+                                                <p>기아포인트 적립(1/2/3/4회 기준) 7/14/21/28만</p>
+                                                <span><a href="#void">견적내기 </a></span>
+                                                <span><a href="#void">시승신청 </a></span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="kia_sub_car">
+                                        오픈 준비중입니다...
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="kia_sub"><span></span>
+                        <a href="#s2">VIDEO</a>
+                    </li>
+                    <li class="kia_sub">
+                        <a href="#s3">구매 및 체험</a>
+
+                    </li>
+                    <li class="kia_sub">
+                        <a href="#s4">외부</a>
+
+                    </li>
+                    <li class="kia_sub">
+                        <a href="#s5">내부</a>
+
+                    </li>
+                    <li class="kia_sub">
+                        <a href="#s6">이벤트</a>
+
+                    </li>
+                </ul>
+            </nav>
+            <div class="innerbox_icon">
+                <ul class="icon_list clear">
+                    <li><a href="#void"><img src="image/search.png" alt="검색아이콘"></a></li>
+                    <li><a href="kia_login.html"><img src="image/my.png" alt="내정보아이콘"></a></li>
+                    <li><a href="#void"><img src="image/notice.png" alt="알림아이콘"></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="fullpage">
+        <div class="fixbox">
+            <ul>
+                <li><a href="#s1"><img src="image/fixed_menu.png" alt="fixed차량페이지"></a></li>
+                <li><a href="index.html"><img src="image/fixed_home.png" alt="fixed맵페이지"></a></li>
+                <li><a href="sub_page.html"><img src="image/fixed_map.png" alt="fixed맵페이지"></a></li>
+                <li><a href="kia_model.html"><img src="image/fixed_car.png" alt="fixed맵페이지"></a></li>
+            </ul>
+        </div>
+        <div id="s1" class="section">
+            <ul class="skip menu">
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+            </ul>
+            <section id="container">
+                <h2 class="blind"></h2>
+                <div data-aos="fade-up" class="kia_main_slide">
+                    <ul class="kia_weather_slide clear">
+                        <li>
+                            <img class="kia_image" src="image/kia_spring.gif" alt="봄">
+                            <img data-aos="fade-up" data-aos-delay="500" class="m_kia_image"
+                                src="image/m_kia_spring.gif" alt="모바일 봄">
+                            <span class="kia_main_slide_title">Spring</span>
+                        </li>
+                        <li>
+                            <img class="kia_image" src="image/kia_summer.jpg" alt="여름">
+                            <img data-aos="fade-up" data-aos-delay="600" class="m_kia_image"
+                                src="image/m_kia_summer_720.gif" alt="모바일 여름">
+                            <span class="kia_main_slide_title">Summer</span>
+                        </li>
+
+                        <li>
+                            <img class="kia_image" src="image/kia_fall.jpg" alt="가을">
+                            <img class="m_kia_image"
+                                src="image/m_kia_fall_720.gif" alt="모바일 가을">
+                            <span class="kia_main_slide_title">Fall</span>
+                        </li>
+
+                        <li>
+                            <img class="kia_image" src="image/kia_winter2.gif" alt="겨울">
+                            <img class="m_kia_image"
+                                src="image/m_kia_winter2-720.gif" alt="모바일 겨울">
+                            <span class="kia_main_slide_title">Winter</span>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </section>
+            <div class="scroll">
+                <img src="image/scroll.png" alt="스크롤사진">
+                <span>Scroll</span>
+            </div>
+        </div>
+        <div id="s2" class="section">
+            <section class="contents">
+                <h3 class="blind"></h3>
+                <div class="kia_video">
+                    <div class="grid1">
+                        <div class="kia_video_title">
+                            <span>Innovation inspired<strong> by Nature</strong><br>Join the movement</span>
+                        </div>
+                    </div>
+                    <div class="grid2"></div>
+                    <div class="grid3"></div>
+                    <div class="grid4"></div>
+                    <div class="grid5">
+                        <a class="kia_play" href="#void">PLAY</a>
+                        <a class="kia_pause" href="#void">PAUSE</a>
+                    </div>
+                    <div class="grid6"></div>
+                    <video id="video" autoplay muted loop playsinline src="image/kia_video.mp4"></video>
+                </div>
+        </div>
+        <div id="s3" class="section">
+            <div class="kia_twopage">
+                <div class="kia_cars">
+                    <h4 data-aos="fade-down" data-aos-easing="linear" data-aos-delay="500" class="kia_model_title">Our
+                        Model</h4>
+                    <p data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
+                        class="kia_model_subtitle">기아 자동차의 다양한 모델을 경험하세요!!</p>
+                    <div class="kia_car_box">
+                        <div class="kia_Box">
+                            <ul class="kia_cars_name clear">
+                                <li class="car_type1">
+                                    <span>Sorento</span>
+                                    <div class="kia_car_pic">
+                                        <img src="image/sorento_slice.gif" alt="차량소개sorento">
+                                    </div>
+                                </li>
+                                <li class="car_type2">
+                                    <span>K9</span>
+                                    <div class="kia_car_pic">
+                                        <img src="image/k9_slice.gif" alt="차량소개k9">
+                                    </div>
+                                </li>
+                                <li class="car_type3">
+                                    <span>Sportage</span>
+                                    <div class="kia_car_pic">
+                                        <img src="image/sportage_slice.gif" alt="차량소개sportage">
+                                    </div>
+                                </li>
+                                <li class="car_type4">
+                                    <span>Ray</span>
+                                    <div class="kia_car_pic">
+                                        <img src="image/ray_slice.gif" alt="차량소개ray">
+                                    </div>
+                                </li>
+                                <li class="car_type5">
+                                    <span>Stinger</span>
+                                    <div class="kia_car_pic">
+                                        <img src="image/stringer_slice.gif" alt="차량소개stinger">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <ul class="bannerBtn clear">
+                            <li class="active"><a href="#void"></a></li>
+                            <li><a href="#void"></a></li>
+                            <li><a href="#void"></a></li>
+                            <li><a href="#void"></a></li>
+                            <li><a href="#void"></a></li>
+                        </ul>
+                    </div>
+                    <ul class="kia_cars_arrow clear">
+                        <li class="leftBtn"><a href="#void"><img src="image/kia_prev.png" alt="이전"></a></li>
+                        <li class="rightBtn"><a href="#void"><img src="image/kia_next.png" alt="다음"></a></li>
+                    </ul>
+                    <div class="kia_car_explain clear">
+                        <div class="kia_car_explainBox">
+                            <span>차량 기본가격</span>
+                            <img src="image/car_price.png" alt="차량기본가격">
+                            <p>FROM 차량기본가격
+                                39,500,000
+                                (개별소비세 5%기준)</p>
+                        </div>
+                        <div class="kia_car_explainBox">
+                            <span>복합 연비</span>
+                            <img src="image/efficient.png" alt="복합연비">
+                            <p>UP TO 복합연비
+                                11.2km/ℓ</p>
+                        </div>
+                        <div class="kia_car_explainBox">
+                            <span>편의</span>
+                            <img src="image/safety.png" alt="편의">
+                            <p>첨단 편의사양으로 느끼는
+                                드라이빙의 즐거움</p>
+                        </div>
+                        <div class="kia_car_explainBox">
+                            <span>안전</span>
+                            <img src="image/comfort.png" alt="안전">
+                            <p>프리미엄 퍼포먼스 세단의
+                                주행성능을 뒷받침할 첨단 안전기술</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="kia_cars_background"></div>
+
+            </div>
+        </div>
+        <div id="s4" class="section">
+            <div class="kia_exterior">
+                <div class="kia_exterior_box">
+                    <div class="kia_exterior_contents">
+                        <h4 class="kia_title">Exterior of KIA</h4>
+                        <ul>
+                            <li>
+                                <p class="kia_sub_title"><span>01</span>Refined Boldness</p>
+                                <p class="kia_exterior_text1">혁신으로 완성된 정제된 강렬함 <br><strong>SUV의 새로운 디자인</strong>
+                                    을 제시하다.</p>
+                                <span class="m_kia_sub_text"><span>01</span><strong>혁신으로 완성된 SUV</strong>의 새로운디자인</span>
+                            </li>
+                            <li>
+                                <p class="kia_exterior_text2"><span>02</span><span>Premium Gravity</span><strong>존재감을
+                                        드러내는 선</strong>이 굵고 기품있는
+                                    디자인으로<br>블랙 컬러 고유의 정제된 프리미엄 그래비티</p>
+                                <span class="m_kia_sub_text"><span>02</span><strong>KIA 고유의</strong> 정제된 프리미엄
+                                    그래비티</span>
+
+                            </li>
+                            <li>
+                                <p class="kia_exterior_text2"><span>03</span><span>Future-Oriented</span><strong>모던하고
+                                        미래지향적인 디자인</strong>이와이드하면서도 <br> 정교한 디테일에서 느껴지는 플래그십의 품격</p>
+                                <span class="m_kia_sub_text"><span>03</span><strong>모던하고</strong> 미래지향적인 디자인</span>
+
+                            </li>
+                            <li>
+                                <p class="kia_exterior_text2"><span>04</span><span>Prestage Design</span><strong>웅장한
+                                        볼륨감, 프레스티지를 더하다</strong><br> 강인한 외관과 세련된 디자인으로
+                                    존재감 완성.
+                                </p>
+                                <span class="m_kia_sub_text"><span>04</span><strong>강인함과 웅장한</strong> 볼륨감으로 프레스티지를
+                                    더하다.</span>
+
+                            </li>
+                        </ul>
+                        <p class="kia_more"><a href="kia_model.html">자세히보기</a></p>
+                    </div>
+                    <div class="kia_eximg">
+                        <ul class="kia_in_img">
+                            <li><img src="image/kia_exterior_stinger.jpg" alt="외형사진1"></li>
+                            <li><img src="image/kia_exterior_k9.jpg" alt="외형사진2"></li>
+                            <li><img src="image/kia_exterior_sportage.jpg" alt="외형사진3"></li>
+                            <li><img src="image/kia_exterior_ray.jpg" alt="외형사진4"></li>
+                            <li><img src="image/kia_exterior.gif" alt="외형사진5"></li>
+                        </ul>
+                        <ul class="kia_btn">
+                            <li><a href="#void"><img src="image/mini_stinger.jpg" alt="외형버튼1"></a></li>
+                            <li><a href="#void"><img src="image/mini_k9.jpg" alt="외형버튼2"></a></li>
+                            <li><a href="#void"><img src="image/mini_sportage.jpg" alt="외형버튼3"></a></li>
+                            <li><a href="#void"><img src="image/mini_ray.png" alt="외형버튼4"></a></li>
+                            <li><a href="#void"><img src="image/mini_sorento.png" alt="외형버튼5"></a></li>
+                        </ul>
+                    </div>
+                    <div class="kia_in_eximg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="s5" class="section">
+            <div class="kia_interior">
+                <div class="kia_interior_box">
+                    <div aos="fade-up" data-aos-offset="200" data-aos-easing="ease-out-cubic" data-aos-duration="500"
+                        class="kia_inimg">
+                        <ul>
+                            <li><img src="image/kia_interior.jpg" alt="kia내부1"></li>
+                            <li><img src="image/kia_interior_p1.jpg" alt="kia내부2"></li>
+                            <li><img src="image/kia_interior_p2.jpg" alt="kia내부3"></li>
+                        </ul>
+                        <div class="kia_inimg_back"></div>
+                    </div>
+                    <div class="kia_interior_listbox">
+                        <h4 class="kia_title">Interior of KIA</h4>
+                        <div class="kia_interior_contents">
+                            <ul>
+                                <li>
+                                    <p class="kia_interior_sub_title"><span>01</span>Functional Emotions</p>
+                                    <p class="kia_interior_text">직관적인 인터페이스로 기능적 감성의<br>실내공간을 구현하다.</p>
+                                </li>
+                                <li>
+                                    <p class="kia_interior_sub_title"><span>02</span>차급을 초월한 여유로운 실내공간</p>
+                                    <p class="kia_interior_text">동급 최초 2열 독립시트와 탑승자를<br>배려한 실내 편의 사양</p>
+                                </li>
+                                <li>
+                                    <p class="kia_interior_sub_title"><span>03</span>차급을 뛰어 넘는 퍼포먼스 & 안전사양</p>
+                                    <p class="kia_interior_text">신규 플랫폼(N3), 주행 신기술, 첨단 안전 기술로<br>가장 여유 있고 안전한 드라이빙</p>
+                                </li>
+                                <li>
+                                    <p class="kia_interior_sub_title"><span>04</span>차와 사람의 경계를 허무는 IT 편의 사양</p>
+                                    <p class="kia_interior_text">차와 사람 사이의 연결을 강화하고 차의 용도에<br>대한 규정을 뛰어넘는 새로운 경험</p>
+                                </li>
+                            </ul>
+                            <p class="kia_more"><a href="kia_model.html">자세히보기</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="s6" class="section fp-auto-height">
+            <div class="kia_event_box clear">
+                <h4>EVENT</h4>
+                <div class="kia_event">
+                    <ul class="kia_slides clear">
+                        <li class="b1"><img src="image/kia_event_01.jpg" alt="이벤트페이지1"></li>
+                        <li class="b2"><img src="image/kia_event_02.jpg" alt="이벤트페이지2"></li>
+                        <li class="b3"><img src="image/kia_event_03.jpg" alt="이벤트페이지3"></li>
+                        <li class="b4"><img src="image/kia_event_04.jpg" alt="이벤트페이지4"></li>
+                    </ul>
+                    <div class="controlWrap clear">
+                        <div class="text">
+                            <span class="count">0</span> / <span class="total">0</span>
+                        </div>
+                        <ul class="btn clear">
+                            <li class="eleftBtn"><a href="#void">왼쪽</a></li>
+                            <li class="erightBtn"><a href="#void">오른쪽</a></li>
+                            <li class="PlayStop"><a href="#void">play/stop</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="kia_notice clear">
+                    <h5>NOTICE</h5>
+                    <ul class="kia_notice_list">
+                        <li>
+                            <a href="https://www.instagram.com/p/CWj_FIFhCYJ/">
+                                <img class="notice_front" src="image/notice_front.jpg" alt="notice1번">
+                                <span class="notice_date"><span>2021.11.6</span>새로운 기아로 여러분을 안내합니다.</span>
+                                <img class="notice_icon" src="image/instagram.png" alt="notice인스타그램">
+                            </a>
+                        </li>
+                        <li><a href="https://www.instagram.com/p/CWZQcBRLAt3/">
+                                <img class="notice_front" src="image/notice_front2.jpg" alt="notice2번">
+                                <span class="notice_date"><span>2021.12.03</span>New KIA의 자율주행을 선사합니다</span>
+                                <img class="notice_icon" src="image/instagram.png" alt="notice인스타그램">
+                            </a>
+                        </li>
+                        <li><a href="#void">
+                                <span class="notice_title">개인정보 처리 방침 변경 안내(2022.02.11)</span>
+                                <span class="notice_title2">2022-02-11</span>
+                            </a></li>
+                        <li><a href="#void">
+                                <span class="notice_title">기아, 국내 최초 1인승 다목적 모델 '레이 1인승 밴' 출시</span>
+                                <span class="notice_title2">2022-02-08</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="s7" class="section fp-auto-height">
+            <footer id="kia_foot">
+                <div class="kia_foot_box">
+                    <div class="kia_sns_box">
+                        <ul class="kia_sns">
+                            <li><a href="#void"><img src="image/facebook.png" alt="페이스북"></a></li>
+                            <li><a href="https://www.instagram.com/kia.worldwide/"><img src="image/instagram.png" alt="인스타그램"></a></li>
+                            <li><a href="https://www.youtube.com/c/KiaWorldwideOfficial"><img src="image/youtube.png" alt="유튜브"></a></li>
+                        </ul>
+                    </div>
+                    <div class="kia_foot_1">
+                        <ul class="kia_kind_list clear">
+                            <a href="#void"><strong class="kia_kind">모델</strong></a>
+                            <li><a href="#void">Stringer</a></li>
+                            <li><a href="#void">스포티지</a></li>
+                            <li><a href="#void">쏘렌토</a></li>
+                            <li><a href="#void">K9</a></li>
+                            <li><a href="#void">Ray</a></li>
+                        </ul>
+                        <ul class="kia_kind_2 clear">
+                            <li><a href="#void">진행중인 이벤트</a></li>
+                            <li><a href="#void">이달의 구매혜택</a></li>
+                            <li><a href="#void">온라인 견적</a></li>
+                            <li><a href="sub_page.html">사이트 맵</a></li>
+                        </ul>
+                        <ul class="kia_kind_3 clear">
+                            <li><a href="#void">개인정보 처리방침</a></li>
+                            <li><a href="#void">이용약관</a></li>
+                            <li><a href="#void">윤리경영 사이버감사실</a></li>
+                            <li><a href="#void">전자 공고</a></li>
+                        </ul>
+                        <p>사업자 기아㈜ 대표 송호성, 최준영 사업자등록번호 119-81-02316 06797 서울특별시 서초구 헌릉로 12 (양재동)</p>
+                        <div class="familysite">
+                            <select name="관련사이트 바로가기" class="select">
+                                <option value="familysite">Familysite</option>
+                                <option value="현대자동차그룹">현대자동차그룹</option>
+                                <option value="기아멤버스">기아멤버스</option>
+                                <option value="기아블로그 'PLAY Kia'">기아블로그 'PLAY Kia'</option>
+                                <option value="기아타이거스">기아타이거스</option>
+                                <option value="Kia Connect">Kia Connect</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="kia_foot_logo">
+                    <a href="#void"><img src="image/kia_logo_footer.png" alt="footer로고"></a>
+                    <span>© Copyright 2022 KIA Motor Company.<br>
+                        All Rights Reserved.</span>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

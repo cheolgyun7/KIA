@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .firstpage{
+            position: relative;
+            max-width: 1920px;
+            margin: 0 auto;
+        }
+        .firstpage>img{
+            width: 100%;
+        }
+        .firstpage>p>strong{
+            font-size: 3rem;
+        }
+        .firstpage>p{
+            width: 520px;
+            font-weight: lighter;
+            position: absolute;
+            top: 15%;
+            left: 10%;
+            color: #f1f1f1;
+            font-size: 1.5rem;
+        }
+        .center_page{
+            position: relative;
+            max-width: 1920px;
+            margin: 0 auto;
+            transition: 1s;
+        }
+        .center_title{
+            display: block;
+            text-align: center;
+            font-size: 2rem;
+            padding: 50px 0;
+        }
+        .allcar_ment h1{
+            font-weight: lighter;
+        }
+        .allcar_ment{
+            display: flex;
+            flex-direction: column;
+            width: calc(42vw - 150px);
+            background-color: rgb(20, 23, 59);
+            position: absolute;
+            color: #f1f1f1;
+            padding: 50px;
+            font-weight: lighter;
+            z-index: 10 ;
+        }
+        .allcar_more{
+            position: absolute;
+            left: 40%;
+            transform: translateX(-50%);
+            bottom: 70px;
+            width: 250px;
+            height: 70px;
+            background-color: rgb(42, 51, 184);
+            z-index: 150;
+            font-size: 1.5rem;
+            text-align: center;
+            line-height: 70px;
+            transition: 1s;
+        }
+        .allcar_more:hover {
+            background-color: rgb(16, 22, 97);
+        }
+        .allcar_more a{
+            color: #f1f1f1;
+        }
+        .allcar_ment ul li{
+            padding: 15px;
+        }
+        .kia_360car>p{
+            position: relative;
+            left: 100%;
+            margin: 0 auto;
+            display: none;
+            transition: 1s;
+            width: 100%;
+        }
+        .kia_360car{
+            position: relative;
+            width: 50%;
+        }
+        .kia_360car p img{
+            width:100%
+        }
+        #c0.kia_360car{
+            display: block;
+        }
+        .slide{
+            position: absolute;
+            right: 400px;
+            appearance: none;
+            width: 300px; height: 25px;
+            background: #d3d3d3;
+            outline: none;
+            opacity: 0.7;
+            transition: opacity .2s;
+        }
+        .slide:hover{
+            opacity: 1;
+        }
+        .slide::-webkit-slider-thumb{
+            appearance: none;
+            width: 25px;
+            height: 25px;
+            background-color: #686108;
+            cursor: pointer;
+        }
+        .slide::-moz-range-thumb{
+            width: 25px;
+            height: 25px;
+            background-color: #04aa6d;
+            cursor: pointer;
+        }
+        .kia_360car .active{
+            display: block;
+        }
+        .allcar p{
+            display: none;
+        }
+        .kia_news{
+            max-width: 1260px;
+            margin: 0 auto;
+            padding: 100px 0;
+        }
+        .kia_news ul{
+            display: flex;
+        }
+        .kia_news ul li{
+            margin: 10px;
+        }
+        .kia_news ul li img{
+            width: 100%;
+            filter: drop-shadow(5px 5px 5px #000);
+        }
+        @media screen and (max-width:1600px) {
+            .center_page{
+                max-width: 1260px;
+            }
+            .slide{
+                right: 200px;
+            }
+        }
+        @media screen and (max-width:1260px){
+            .allcar_ment{
+                width: 80%;
+                position: static;
+            }
+            .allcar_more{
+                top: 50%;
+                right: 0;
+                left: auto;
+                transform: none;
+                bottom: 0;
+            }
+            .kia_360car>p{
+                left: 50%;
+            }
+            .slide{
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+        @media screen and (max-width:960px){
+            .firstpage>p{
+                width: 350px;
+                font-size: 1.2rem;
+            }
+            .firstpage>p>strong{
+                font-size: 2rem;
+            }
+            .center_title{
+                font-size: 1.5rem;
+            }
+            .allcar_ment h1{
+                font-size: 1.8rem;
+            }
+            .allcar_more{
+                width: 200px;
+                height: 50px;
+                line-height: 50px;
+                font-size: 1.2rem;
+            }
+        }
+        @media screen and (max-width:640px){
+            .firstpage>p>strong{
+                font-size: 1.5rem;
+            }
+            .firstpage>p{
+                top: 25%;
+            }
+            .allcar_more{
+                position: static;
+            }
+            .allcar_ment{
+                padding: 20px;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="css/kia_reset.css">
+    <link rel="stylesheet" href="css/kia_style.css">
+    <script src="jquery/jquery-3.6.0.min.js"></script>
+    <script src="jquery/kia.js"></script>
+    <script src="jquery/kia_model.js"></script>
+</head>
+<body>
+    <div class="header"></div>
+    <div class="firstpage">
+        <img src="image/2021_kia_sorento_sx_4k-2560x1440.jpg" alt="subpageMAIN">
+        <p><strong>KIA's motor Experience</strong>
+            체험을 통해 기아를 만나보세요
+        </p>
+    </div>
+    <div class="center_page">
+        <h1 class="center_title">360도 회전 View</h1>
+        <div class="allcar_ment">
+            <h1>쏘렌토 플라티늄 그라파이트</h1>
+            <ul>
+                <li><span class="sorento_m">프로젝션 LED 헤드램프</span></li>
+                <li><span class="sorento_m">LED 리어 콤비네이션램프</span></li>
+                <li><span class="sorento_m">히든 리어 와이퍼</span></li>
+                <li><span class="sorento_m">20인치 스퍼터링 휠</span></li>
+            </ul>
+        </div>
+        <p class="allcar_more"><a href="index.html">홈페이지 다시가기</a></p>
+        <div class="allcar">
+            <div class="kia_360car">
+                <p class="active"><img src="image/360/ABT_1.png" alt="sorentoVR1"></p>
+                <p><img src="image/360/ABT_2.png" alt="sorentoVR2"></p>
+                <p><img src="image/360/ABT_3.png" alt="sorentoVR3"></p>
+                <p><img src="image/360/ABT_4.png" alt="sorentoVR4"></p>
+                <p><img src="image/360/ABT_5.png" alt="sorentoVR5"></p>
+                <p><img src="image/360/ABT_6.png" alt="sorentoVR6"></p>
+                <p><img src="image/360/ABT_7.png" alt="sorentoVR7"></p>
+                <p><img src="image/360/ABT_8.png" alt="sorentoVR8"></p>
+                <p><img src="image/360/ABT_9.png" alt="sorentoVR9"></p>
+                <p><img src="image/360/ABT_10.png" alt="sorentoVR10"></p>
+                <p><img src="image/360/ABT_11.png" alt="sorentoVR11"></p>
+                <p><img src="image/360/ABT_12.png" alt="sorentoVR12"></p>
+                <p><img src="image/360/ABT_13.png" alt="sorentoVR13"></p>
+                <p><img src="image/360/ABT_14.png" alt="sorentoVR14"></p>
+                <p><img src="image/360/ABT_15.png" alt="sorentoVR15"></p>
+                <p><img src="image/360/ABT_16.png" alt="sorentoVR16"></p>
+                <p><img src="image/360/ABT_17.png" alt="sorentoVR17"></p>
+                <p><img src="image/360/ABT_18.png" alt="sorentoVR18"></p>
+                <p><img src="image/360/ABT_19.png" alt="sorentoVR19"></p>
+                <p><img src="image/360/ABT_20.png" alt="sorentoVR20"></p>
+                <p><img src="image/360/ABT_21.png" alt="sorentoVR21"></p>
+                <p><img src="image/360/ABT_22.png" alt="sorentoVR22"></p>
+                <p><img src="image/360/ABT_23.png" alt="sorentoVR23"></p>
+                <p><img src="image/360/ABT_24.png" alt="sorentoVR24"></p>
+                <p><img src="image/360/ABT_25.png" alt="sorentoVR25"></p>
+                <p><img src="image/360/ABT_26.png" alt="sorentoVR26"></p>
+                <p><img src="image/360/ABT_27.png" alt="sorentoVR27"></p>
+                <p><img src="image/360/ABT_28.png" alt="sorentoVR28"></p>
+                <p><img src="image/360/ABT_29.png" alt="sorentoVR29"></p>
+                <p><img src="image/360/ABT_30.png" alt="sorentoVR30"></p>
+                <p><img src="image/360/ABT_31.png" alt="sorentoVR31"></p>
+                <p><img src="image/360/ABT_32.png" alt="sorentoVR32"></p>
+                <p><img src="image/360/ABT_33.png" alt="sorentoVR33"></p>
+                <p><img src="image/360/ABT_33.png" alt="sorentoVR34"></p>
+                <p><img src="image/360/ABT_35.png" alt="sorentoVR35"></p>
+                <p><img src="image/360/ABT_36.png" alt="sorentoVR36"></p>
+            
+            </div>
+            <input type="range" min="1" max="36" value="1" class="slide" id="myRange">
+            <p>Value: <span id="demo"></span></p>
+        </div>
+    </div>
+    <div class="kia_news">
+        <ul>
+            <li><a href="#void"><img src="image/subpage_p1.gif" alt="서브페이지설명1"></a></li>
+            <li><a href="#void"><img src="image/subpage_p2.gif" alt="서브페이지설명2"></a></li>
+            <li><a href="#void"><img src="image/subpage_p3.gif" alt="서브페이지설명3"></a></li>
+            <li><a href="#void"><img src="image/subpage_p4.gif" alt="서브페이지설명4"></a></li>
+        </ul>
+    </div>
+    <div class="footer"></div>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .kia_mapWrap h1 {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .kia_mapWrap {
+            margin-top: 100px;
+        }
+        .kia_motor{
+            display: flex;
+            max-width: 1260px;
+            margin: 0 auto;
+            justify-content: space-between;
+            font-size: 1.2rem;
+            color: aliceblue;
+            text-align: center;
+        }
+        .kia_motor>div{
+            width: 30%;
+            background-color: black;
+            padding: 20px;
+        }
+    </style>
+    <link rel="stylesheet" href="css/kia_reset.css">
+    <link rel="stylesheet" href="css/kia_style.css">
+    <script src="jquery/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript"
+        src="//dapi.kakao.com/v2/maps/sdk.js?appkey=787cf04d68c015051e8fa04132155c06"></script>
+    <!-- <script src="jquery/kia_sub.js"></script> -->
+    <script>
+        $(function () {
+            $(".header").load("header_footer.html header")
+            $(".footer").load("header_footer.html #s7.section")
+        })
+    </script>
+</head>
+
+<body>
+    <div class="header"></div>
+    <div class="kia_mapWrap">
+        <h1>전시장 찾기</h1>
+        <div class="kia_motor">
+            <div>기아 자동차 본사</div>
+            <div>기아-강서 플래그십 스토어</div>
+            <div>기아 국내 사업본부</div>
+        </div>
+        <div id="map" style="width:100%;height:400px;"></div>
+        <script>
+            let mapX = new Array(37.4641637, 37.5584615, 37.1590806);
+            let mapY = new Array(127.0424886, 126.8590597, 126.8139203);
+            let sMap = 0;
+
+            function makeMap() {
+
+                var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+                    mapOption = {
+                        center: new kakao.maps.LatLng(mapX[sMap], mapY[sMap]), // 지도의 중심좌표
+                        level: 3 // 지도의 확대 레벨
+                    };
+
+                var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+
+                var imageSrc = 'http://cjfrbs14.dothome.co.kr/image/intro__.png', // 마커이미지의 주소입니다    
+                    imageSize = new kakao.maps.Size(30, 35), // 마커이미지의 크기입니다
+                    imageOption = { offset: new kakao.maps.Point(27, 69) }; // 마커이미지의 옵션입니다. 마커의 좌표와 일치시킬 이미지 안에서의 좌표를 설정합니다.
+
+                // 마커의 이미지정보를 가지고 있는 마커이미지를 생성합니다
+                var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
+                    markerPosition = new kakao.maps.LatLng(mapX[sMap], mapY[sMap]); // 마커가 표시될 위치입니다
+
+                // 마커를 생성합니다
+                var marker = new kakao.maps.Marker({
+                    position: markerPosition,
+                    image: markerImage // 마커이미지 설정 
+                });
+
+                // 마커가 지도 위에 표시되도록 설정합니다
+                marker.setMap(map);
+            }
+            makeMap();
+            $(".kia_motor>div").on("click", function () {
+                sMap = $(this).index();
+                makeMap();
+            })
+        </script>
+    </div>
+    <div class="footer"></div>
+</body>
+
+</html>

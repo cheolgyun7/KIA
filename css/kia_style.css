@@ -1,0 +1,1910 @@
+
+#s1.section{
+    height: 969px;
+}
+/* fixed아이콘들 오른쪽배치 */
+.fixbox{
+    position: fixed;
+    z-index: 100000;
+    right: 10px;
+    bottom: 150px;
+}
+.fixbox ul{
+    width: 30px;
+    height: 150px;
+    border-radius: 10px;
+    background-color: #d6d6d6;
+}
+.fixbox ul li{
+    margin: 10px 0;
+}
+.fixbox img{
+    width: 100%;
+}
+
+.m-nav-header {
+    display: none;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgb(8, 8, 8); */
+  }
+  .m-nav__hamBtn {
+    width: 50px;
+    height: 50px;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+  .m-nav__hamBtn-icon {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  .m-nav__hamBtn-icon,
+  .m-nav__hamBtn-icon span {
+    display: inline-block;
+    transition: all 0.4s;
+    box-sizing: border-box;
+  }
+  .m-nav__hamBtn-icon span {
+    position: absolute;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background-color: #f1f1f1;
+  }
+  .m-nav__hamBtn-icon span:first-child {
+    top: 0;
+  }
+  .m-nav__hamBtn-icon span:nth-child(2) {
+    top: 10px;
+  }
+  .m-nav__hamBtn-icon span:last-child {
+    bottom: 0;
+  }
+  /* hamBtn - x자 애니메이션 (접혔다 펴지기)*/
+.m-nav__hamBtn-icon span:nth-of-type(1) {
+    -webkit-animation: menu-bar-line-ani 0.75s forwards;
+    animation: menu-bar-line-ani 0.75s forwards;
+  }
+  @-webkit-keyframes menu-bar-line-ani {
+    0% {
+      -webkit-transform: translateY(10px) rotate(45deg);
+    }
+    50% {
+      -webkit-transform: translateY(10px) rotate(0);
+    }
+    100% {
+      -webkit-transform: translateY(0) rotate(0);
+    }
+  }
+  @keyframes menu-bar-line-ani {
+    0% {
+      transform: translateY(10px) rotate(45deg);
+    }
+    50% {
+      transform: translateY(10px) rotate(0);
+    }
+    100% {
+      transform: translateY(0) rotate(0);
+    }
+  }
+  .m-nav__hamBtn-icon span:nth-of-type(2) {
+    transition: all 0.25s 0.25s;
+    opacity: 1;
+  }
+  .m-nav__hamBtn-icon span:nth-of-type(3) {
+    -webkit-animation: menu-bar-line-ani-2 0.75s forwards;
+    animation: menu-bar-line-ani-2 0.75s forwards;
+  }
+  @-webkit-keyframes menu-bar-line-ani-2 {
+    0% {
+      -webkit-transform: translateY(-10px) rotate(-45deg);
+    }
+    50% {
+      -webkit-transform: translateY(-10px) rotate(0);
+    }
+    100% {
+      -webkit-transform: translateY(0) rotate(0);
+    }
+  }
+  @keyframes menu-bar-line-ani-2 {
+    0% {
+      transform: translateY(-10px) rotate(-45deg);
+    }
+    50% {
+      transform: translateY(-10px) rotate(0);
+    }
+    100% {
+      transform: translateY(0) rotate(0);
+    }
+  }
+  .m-nav__hamBtn-icon.active span:nth-of-type(1) {
+    -webkit-animation: active-menu-bar-line-ani 0.75s forwards;
+    animation: active-menu-bar-line-ani 0.75s forwards;
+  }
+  @-webkit-keyframes active-menu-bar-line-ani {
+    0% {
+      -webkit-transform: translateY(0) rotate(0);
+    }
+    50% {
+      -webkit-transform: translateY(10px) rotate(0);
+    }
+    100% {
+      -webkit-transform: translateY(10px) rotate(45deg);
+    }
+  }
+  @keyframes active-menu-bar-line-ani {
+    0% {
+      transform: translateY(0) rotate(0);
+    }
+    50% {
+      transform: translateY(10px) rotate(0);
+    }
+    100% {
+      transform: translateY(10px) rotate(45deg);
+    }
+  }
+  .m-nav__hamBtn-icon.active span:nth-of-type(2) {
+    opacity: 0;
+  }
+  .m-nav__hamBtn-icon.active span:nth-of-type(3) {
+    -webkit-animation: active-menu-bar-line-ani-2 0.75s forwards;
+    animation: active-menu-bar-line-ani-2 0.75s forwards;
+  }
+  @-webkit-keyframes active-menu-bar-line-ani-2 {
+    0% {
+      -webkit-transform: translateY(0) rotate(0);
+    }
+    50% {
+      -webkit-transform: translateY(-10px) rotate(0);
+    }
+    100% {
+      -webkit-transform: translateY(-10px) rotate(-45deg);
+    }
+  }
+  @keyframes active-menu-bar-line-ani-2 {
+    0% {
+      transform: translateY(0) rotate(0);
+    }
+    50% {
+      transform: translateY(-10px) rotate(0);
+    }
+    100% {
+      transform: translateY(-10px) rotate(-45deg);
+    }
+  }
+   /*  */
+
+header{
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    padding-top:20px;
+}
+.wide_inner_box{
+    max-width:1920px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    position: relative;
+    /* background-color: green; */
+}
+.kia_logo{
+    float: left;
+    margin:10px 20px;
+    width:120px;
+}
+.kia_logo img{
+    width:100%;
+}
+/* 모바일 아이콘들 */
+/* 햄버거버튼 pc에서 안나오게 */
+.kia_ham{
+    display: none;
+}
+.kia_m_logo{
+    display: none;
+}
+.kia_m_icon{
+    display: none;
+}
+
+.icon_list{
+    position: absolute;
+    right:10px;
+    top:10px; 
+}
+.icon_list>li{
+    float: left;
+    margin-left:15px;
+}
+
+/* nav hover */
+nav{
+    font-size: 1.5rem;
+    text-align: center;
+}
+#menu{
+    display: inline-block;
+    /* text-align: center; */
+    position: relative;
+}
+#menu>li{
+    padding:0px 60px;
+    float:left;
+    font-size: 1.3rem;
+    box-sizing: border-box;
+    color: #000;
+    /* background-color: red; */
+}
+#menu>li>a{
+    display: block;
+	text-decoration:none;
+	color:#f1f1f1;
+    line-height: 50px;
+    margin-bottom:20px;
+}
+#menu li.on a:hover{
+	color: #e4bb63;
+}
+
+#menu>li:hover>a,
+#menu>li.on>a{
+    color: #e4bb63;
+    transition: .5s;
+}
+#menu>li:hover>.kia_sub_menu1{
+    display: block;
+}
+
+/* nav hover */
+.kia_hover{
+    position: absolute;
+    left: -90px;
+    bottom:0;
+    transition: all 3s 2s;
+    /* display: none; */
+}
+.kia_sub_menu1{
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    z-index: 100;
+    display: none;
+    left:0;
+    top:70px;
+}
+.kia_sub_menu_bg{
+    max-width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #f3f3f3;
+    position: relative;
+    padding:50px 30px;
+}
+.kia_sub_menu_title{
+    text-align: center;
+    width:20%;
+    float:left;
+    box-sizing: border-box;
+}
+.kia_sub_menu_list{
+    width: 80%;
+    /* height: 100%; */
+    float:left;
+}
+.kia_sub_menu_title li{
+    margin: 0 0 1rem;
+   
+    line-height: 3;
+}
+.kia_sub_menu_title li a{
+    display: block;
+    font-family: "KIA_MortorsMedium",sans-serif;
+    font-size: 1.1rem;
+    color: #f1f1f1;
+    background:black;
+    padding: 5px 0;
+}
+.kia_sub_car{
+    width: 100%;
+    height: 100%;
+    /* margin-top: 30px; */
+    display: none;
+}
+.kia_sub_car:first-of-type{
+    z-index: 10;
+    display: block;
+}
+.kia_sub_car:nth-of-type(2){
+    /* display: none; */
+}
+
+.kia_sub_car_all{
+    float:left;   
+    margin-left: 10px;
+    width:30%;
+    background: #f6f3f2;
+    border-left: 1px solid #ddd;
+    position: relative;
+    box-sizing: border-box;
+}
+.kia_sub_car_box{
+    /* width: 100%;
+    height: 60%;
+    overflow: hidden;
+    position: relative; */
+}
+.kia_sub_car_box img{
+   width:100%;
+  
+}
+.kia_sub_car_btn p{
+    text-align: center;
+    color: #002c5e;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 30px 0;
+}
+.kia_sub_car_btn p:last-of-type{
+    text-align: center;
+    color: #111;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.kia_sub_car_btn strong{
+   display: block;
+}
+.kia_sub_car_btn span{
+    display: inline-block;
+    background-color: #002c5e;
+    padding: 5px 25px 10px;
+    margin-bottom: 10px;
+}
+.kia_sub_car_all>.kia_sub_car_btn>span a{
+    font-size: 1rem;
+    color: #f1f1f1;
+}
+/* nav hover 소메뉴: RV */
+.kia_sub_car:last-of-type>.kia_sub_car_all{
+    width: 25%;
+}
+/* RV */
+
+/* 메인메뉴 슬라이드 */
+.kia_main_slide{
+    overflow: hidden;
+   
+}
+.kia_weather_slide{
+    width: 120%;
+    overflow: hidden;
+    margin-left: -10%;
+}
+.kia_weather_slide>li{
+    /* position: relative; */
+    width: 24%;
+    float: left;
+    overflow: hidden;
+    transform: skewX(-10deg);
+    margin: 0 .3%;
+    height: 900px;
+    object-fit: cover;
+
+    /* height: 900px; */
+}
+/* 각 이미지 위치 잡기 */
+.kia_weather_slide>li img{
+    transform: skewX(10deg);
+    position: relative;
+    left: -50%;
+    filter: brightness(20%);
+}
+.kia_weather_slide>li>img:hover{
+    filter: brightness(100%);
+    transform: skewX(10deg) scale(1.2);
+    transition: .5s;
+    /* object-fit: contain; */
+}
+.kia_weather_slide>li:nth-of-type(2) img{
+    top: -50%;
+    left: -180%;
+    transform:  skewX(10deg) scale(0.7);
+}
+.kia_weather_slide>li:nth-of-type(2):hover img{
+    filter: brightness(100%);
+    transform: skewX(10deg) scale(0.8);
+    transition: .5s;
+}
+.kia_weather_slide>li:nth-of-type(3) img{
+    left: -150%;
+    top: -30%;
+    transform:  skewX(10deg) scale(0.7);
+}
+.kia_weather_slide>li:nth-of-type(3):hover img{
+    filter: brightness(100%);
+    transform: skewX(10deg) scale(0.8);
+    transition: .5s;
+}
+.kia_weather_slide>li:nth-of-type(4) img{
+    left: -100%;
+}
+.kia_weather_slide>li:nth-of-type(4):hover img{
+    filter: brightness(100%);
+    transform: skewX(10deg) scale(1.1);
+    transition: .5s;
+}
+/* 모바일 슬라이드 이미지 none */
+.m_kia_image{
+    display: none;
+}
+.kia_weather_slide>li>.kia_main_slide_title{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%);
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    color: #f3f3f3;
+}
+.kia_main_slide>span{
+    width: 100%;
+    font-size: 1.5rem;
+}
+.scroll{
+    margin-top: 5px;
+    text-align: center;
+}
+.scroll span{
+    line-height: 50px;
+}
+
+
+/* 동영상슬라이드 grid사용 */
+.kia_video{
+    position: relative;
+    display: grid;
+    /* width: 100vw; */
+    height: 969px;
+    overflow: hidden;
+    grid-template-columns: 33% 34% 33%;
+    grid-template-rows: 33% 34% 33%;
+}
+.grid1{
+    grid-column-start: 1; grid-column-end: 3;
+    border-bottom: 1px solid whitesmoke;
+    position: relative;
+}
+.grid1>.kia_video_title{
+    color: #f3f3f3;
+    font-size: 3rem;
+    font-weight: lighter;
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+}
+.grid2{
+    grid-column-start: 3; grid-column-end: 4;
+    border-left: 1px solid whitesmoke;
+    border-bottom: 1px solid whitesmoke;
+}
+.grid3{
+    grid-column-start: 1; grid-column-end: 2;
+    grid-row-start: 2; grid-row-end: 4;
+    border-right: 1px solid whitesmoke;
+}
+.grid4{
+    grid-column-start: 2; grid-column-end: 4;
+    border-bottom: 1px solid whitesmoke;
+}
+.grid5{
+    grid-column-start: 2; grid-column-end: 3;
+    position: relative;
+}
+
+/* 재생,일시정지 버튼 */
+.grid5 a{
+    font-size: 3rem;
+    color: #b69373;
+    width: 100%;
+    height: 30%;
+    position: absolute;
+    z-index: 1;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+.grid5 > a:after {
+    content: "";
+    width: 0%;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    left: 0;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+    background: #ffffff;
+}
+.grid5> a:hover {
+    color: #333;
+}
+.grid5 > a:hover:after {
+    width: 100%;
+    z-index: -1;
+}
+.kia_pause{
+    top: 30%;
+}
+.grid5 a span{
+    position: absolute;
+}
+.grid6{
+    grid-column-start: 3; grid-column-end: 4;
+    border-left: 1px solid whitesmoke;
+}
+
+video{
+    position: absolute;
+    object-fit: cover;
+    min-width: 100%;
+    min-height: 100vh;
+    filter: brightness(60%);
+    z-index: -10;
+    overflow: hidden;
+}
+
+/* ================ 기아차 소개페이지 =================== */
+.kia_twopage{
+    height: 969px;
+    position: relative;
+}
+.kia_car_box{
+    position: relative;
+    overflow: hidden;
+    margin-top: 3rem;
+}
+.kia_cars_background{
+    z-index: -10;
+    width: 100%;
+    height: 40vh;
+    background-color: gray;
+    position: absolute;
+    bottom: 0;
+}
+.kia_model_title{
+    /* margin-top: 10rem; */
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10rem;
+}
+.kia_model_subtitle{
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.kia_Box{
+    max-width: 1260px;
+    height: 500px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+.kia_cars_name{
+    width: 500%;
+    height: 100%;
+    font-size: 1.5rem;
+    position: absolute;
+}
+
+.kia_cars_name li{
+    width: 20%;
+    height: 100%;
+    float: left;
+    padding: 200px;
+    box-sizing: border-box;
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-align: center;
+    position: relative;
+}
+.kia_cars_name li span{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    width: 10vw;
+    text-align: center;
+    font-size: 1.8rem;
+    border: 1px solid rgb(87, 87, 87);
+}
+.kia_car_pic{
+    width: 50%;
+    position: relative;
+    top: -100%;
+    left: 50%;
+    transform: translate(-50%);
+}
+.kia_car_pic img{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.kia_cars_name>li>.kia_car_pic{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* 차량 버튼들 */
+.bannerBtn {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20%;
+}
+.bannerBtn>li {
+    float: left;
+    margin-left: 10px;
+}
+.bannerBtn>li>a {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: #f3f3f3;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.bannerBtn>li.active>a{
+    background: #e4bb63;
+    width: 5rem;
+}
+/* 차량 좌,우 화살표 */
+.kia_cars_arrow{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+}
+.kia_cars_arrow>.leftBtn{
+    float: left;
+    margin-left: 15%;
+}
+.kia_cars_arrow>.leftBtn img{
+    width: 2rem;
+}
+.kia_cars_arrow>.rightBtn{
+    float: right;
+    margin-right: 15%;
+}
+.kia_cars_arrow>.rightBtn img{
+    width: 2rem;
+}
+/* 차량소개 설명박스 */
+.kia_car_explain{
+    max-width: 1260px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    /* left: 50%;
+    transform: translateX(-48%); */
+    bottom: 10%;
+}
+.kia_car_explain>.kia_car_explainBox{
+    position: relative;
+    width: 24%;
+    height: 80px;
+    background-color: #999999;
+    float: left;
+    margin: 0 0.5%;
+}
+.kia_car_explainBox>span{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    line-height: 80px;
+    /* display: none; */
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-family: "KIA_MortorsMedium",sans-serif;
+    color: #f1f1f1;
+}
+.kia_car_explainBox>img,
+.kia_car_explainBox>p{
+    display: none;
+}
+.kia_car_explainBox>img{
+    margin-left: 10px;
+    margin-top: 20px;
+}
+.kia_car_explainBox:nth-child(2)>img{
+    margin-top: 10px;
+}
+.kia_car_explainBox>p{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 70%;
+    font-size: 1rem;
+    transition: ease-in-out;
+}
+
+/* 설명박스 hover할때 */
+
+.kia_car_explainBox:hover{
+    background-color: #fbfbfb;
+}
+.kia_car_explainBox:hover>span{
+    display: none;
+}
+.kia_car_explainBox:hover>img,
+.kia_car_explainBox:hover>p:first-of-type{
+    display: block;
+}
+/* ================= kia exterior ===================== */
+.kia_exterior{
+    background-color: #f2f2f2;
+    height: 969px;
+    position: relative;
+}
+.kia_exterior_box{
+    width: 90%;
+    height: 90vh;
+    margin: 0 auto;
+    position: relative;
+    top: 150px;
+}
+
+.kia_exterior_contents{
+    position: absolute;
+    width: 36%;
+    height: 90%;
+    display: block;
+    text-align: left;
+    animation: slide 1s;
+}
+@keyframes slide {
+    from{
+        left: -300px;
+    }
+    to{
+        left: 0px;
+    }
+}
+.kia_title{
+    font-size: 3.5rem;
+}
+.kia_sub_title{
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-top: 20px;
+    color: rgb(75, 75, 75);
+}
+.kia_sub_title span{
+    font-size: 3rem;
+    display: block;
+}
+.kia_exterior_text1{
+    font-size: 1rem;
+    color: rgb(75, 75, 75);
+}
+.kia_exterior_text2 span{
+    font-weight: bold;
+    font-size: 3rem;
+    display: block;
+}
+.kia_exterior_text2 span:last-of-type{
+    font-size: 1.8rem;
+}
+.kia_exterior_text2{
+    display: block;
+    width: 100%;
+    float: right;
+    text-align: right;
+    font-size: 1rem;
+    /* margin-top: 20px; */
+    color: rgb(75, 75, 75);
+}
+.m_kia_sub_text{
+    display: none;
+}
+.kia_eximg{
+    position: absolute;
+    width: 60%;
+    height: 90%;
+    background-color: black;
+    right: 0;
+    top: 0;
+    
+}
+.kia_eximg>.kia_in_img{
+    width: 100%;
+    height: 80%;
+}
+.kia_eximg>.kia_btn{
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-around;
+    /* background-color: red; */
+    overflow: hidden;
+    z-index: 10;
+    bottom:20px;
+}
+.kia_eximg>.kia_btn li{
+    width: 18%;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+.kia_eximg>.kia_btn li a{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.kia_eximg>.kia_btn li img{
+    width: 100px;
+}
+/* 사진 여러개 */
+.kia_eximg>ul>li>img{
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%,-40%);
+    width: 98%;
+    display: table-cell;
+    vertical-align: middle;
+    display: none;
+}
+.kia_eximg img:first-of-type{
+    display: block;
+    z-index: 10;
+}
+.kia_btn>li.active{
+    opacity: 0.5;
+}
+.kia_exterior_contents .kia_more{
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+}
+.kia_more a{
+    display: block;
+    width: 10rem;
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+    border: 1px solid #333;
+    border-radius: 3rem;
+    background: #333;
+    color: #f3f3f3;
+}
+.kia_more:hover a{
+    background-color: #111;
+    color: #e4bb63;
+    box-sizing: border-box;
+    transition: 1s;
+}
+/* ======================= kia Interior ======================== */
+.kia_interior{
+    position: relative;
+    height: 969px;
+}
+.kia_interior_box{
+    width: 90%;
+    height: 90vh;
+    margin: 0 auto;
+    position: relative;
+    top: 150px;
+}
+.kia_interior_listbox{
+    width: 36%;
+    height: 90%;
+    position: absolute;
+    margin-right: 1%;
+    display: inline-block;
+    right: 0;
+    top: 0;
+}
+.kia_interior_contents{
+    text-align: right;
+    margin-top: 3%;
+}
+.kia_interior_listbox>.kia_title{
+    display: inline-block;
+    transform: rotate(90deg);
+    position: absolute;
+    left: -200px;
+    top: 250px;
+}
+.kia_interior_sub_title span{
+    display: block;
+    font-size: 3rem;
+}
+.kia_interior_sub_title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(75, 75, 75);
+}
+.kia_interior_text{
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: rgb(75, 75, 75);
+}
+.kia_interior_contents>.kia_more{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    /* top: 90%; */
+}
+.kia_inimg{
+    position: absolute;
+    width: 60%;
+    height: 90%;
+    background-color: #b69373;
+}
+.kia_inimg img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 98%;
+    display: table-cell;
+    vertical-align: middle;
+    display: none;
+}
+.kia_inimg img:first-of-type{
+    display: block;
+}
+.kia_inimg_back{
+    width: 100%;
+    /* background-color: red; */
+    position: absolute;
+    left: -9%;
+}
+/* ================================== KIA EVENT===================== */
+#s6.section{
+    /* height: 969px; */
+    position: relative;
+}
+.kia_event_box{
+    max-width: 1260px;
+    margin: 0 auto;
+    padding: 100px 0;
+    /* background-color: red; */
+}
+.kia_event_box h4{
+    text-align: center;
+    font-size: 2.5rem;
+}
+.kia_event{
+    width: 100%;
+    position: relative;
+    margin:0 auto;
+    overflow: hidden;
+}
+.kia_slides{
+    width: 600%;
+}
+.kia_slides li{
+    width: calc(100%/6);
+    float:left;   
+}
+.kia_slides li img{
+    width: 100%;
+}
+.controlWrap{
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    /* background: rgb(204, 190, 190); */
+}
+.controlWrap>*{
+    float: left;
+}
+.controlWrap>.text{
+    font-weight: bold;
+    background-color: whitesmoke;
+    padding: 0 10px;
+    border-radius: 10px;
+}
+.controlWrap>.btn>li{
+    float: left;
+    /* border: 1px solid black; */
+    width: 80px;
+    /* height: 30px; */
+    text-align: center;
+}
+.controlWrap>.btn>li a{
+    color: #999;
+    font-weight: bold;
+}
+.controlWrap>.btn>li:hover a{
+    color: #e4bb63;
+}
+.kia_notice{
+    /* width: ; */
+    margin:0 auto;
+}
+.kia_notice h5{
+    font-size: 2rem;
+    text-align: center;
+    padding: 30px 0;
+}
+.kia_notice_list{
+    width: 100%;
+    margin: 0 auto;
+}
+.kia_notice_list{
+    display: flex;
+}
+.kia_notice_list li{
+    position: relative;
+    flex: 1;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+    color: #f3f3f3;
+    /* padding: 5px; */
+    margin: 0 1px;
+    overflow: hidden;
+    background-color: rgb(75,75,75);
+}
+.kia_notice_list li a{
+    /* height: 100%; */
+}
+.kia_notice_list li:hover:nth-of-type(3),
+.kia_notice_list li:hover:nth-of-type(4){
+    background-color: #111;
+}
+.kia_notice_list li a img:first-of-type{
+    /* position: relative; */
+    width: 100%;
+}
+
+.notice_date span{
+    display: block;
+}
+.notice_date{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.9rem;
+    color: #f1f1f1;
+    display: none;
+    animation: kia_notice .5s;
+}
+@keyframes kia_notice {
+    0%{
+        opacity: 0;
+    }
+    
+    100%{
+        opacity: 1;
+    }
+}
+.notice_icon{
+    display: none;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    animation: kia_notice .5s;
+}
+.notice_title{
+    font-size: 1rem;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 50px 30px 30px;
+    /* background-color: red; */
+    color: #f1f1f1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    line-height: 1rem;
+    height: 3rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.notice_title2{
+    font-size: 1rem;
+    display: inline-block;
+    /* background-color: blue; */
+    color: #f1f1f1;
+    padding: 25px 20px;
+}
+.notice_front{
+    /* position: absolute; */
+    /* top: 20%;
+    transform: translateY(-20%); */
+    padding: 30px;
+    transform: scale(2.5);
+}
+.kia_notice_list li a:hover .notice_front{
+    transform: scale(1.5);
+    transition: .5s;
+    filter: brightness(50%);
+    overflow: hidden;
+}
+.kia_notice_list li a:hover .notice_date{
+    display: block;
+    transition: .5s;
+}
+.kia_notice_list li a:hover .notice_icon{
+    display: block;
+}
+.kia_notice_list li a:hover 
+.kia_notice_list li a{
+    display: block;
+    /* background-color: #ffb109; */
+}
+
+  /* 플러그인 끝 */
+/* ================================== KIA FOOTER ================ */
+
+#kia_foot{
+    background-color: #05141f;
+    font-weight: lighter;
+    color: #f1f1f1;
+}
+.kia_foot_box{
+    max-width: 1260px;
+    margin: 0 auto;
+    position: relative;
+}
+.kia_kind{
+    float: left;
+    font-size: 1.6rem;
+    color: #f2f2f2;
+}
+.kia_kind_list{
+   
+    margin-top: 3%;
+}
+.kia_kind_list li{
+    float: left;
+    padding: 0px 20px;
+    border-left: 1px solid rgba(92, 90, 88, 0.5);
+    text-align: center;
+}
+
+.kia_kind_list li a{
+    font-size: 1.2rem;
+    line-height: 2rem;
+    font-weight: lighter;
+    color: #f2f2f2;
+    display: block;
+}
+.kia_kind_list li a:hover{
+    color: #e4bb63;
+}
+.kia_kind_2{
+   
+    padding: 30px 0;
+}
+.kia_kind_2 li{
+    float: left;
+    margin-right: 12%;
+}
+.kia_kind_2 li a{
+    font-size: 1.3rem;
+    color: #f2f2f2;
+}
+.kia_kind_3{
+  
+    padding: 30px 0;
+}
+.kia_kind_3 li{
+    float: left;
+    margin-right: 8%;
+}
+.kia_kind_3 li a{
+    color: #f2f2f2;
+}
+.kia_foot_1 p{
+    font-size: 1rem;
+}
+.kia_sns_box{
+    padding: 20px;
+}
+.kia_sns{
+   display: flex;
+   justify-content: center;
+   
+}
+.kia_sns span{
+    /* color: #f1f1f1; */
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.kia_sns li{
+   margin:0 10px;
+}
+
+.familysite{
+    padding: 30px 0;
+    position: absolute;
+    right: 0;
+}
+.kia_foot_logo{
+    padding: 60px 0;
+}
+.kia_foot_logo a{
+    display: block;
+}
+.kia_foot_logo span{
+    margin-top: 10px;
+    color: #f1f1f1;
+    display: block;
+    text-align: center;
+}
+.kia_foot_logo img{
+    position: relative;
+    margin-top: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media screen and (max-width:1800px){
+    .kia_weather_slide>li:first-child>.kia_main_slide_title{
+        left: 60%;
+    }
+    .kia_weather_slide>li:last-child>.kia_main_slide_title{
+        left: 30%;
+    }
+    .kia_sub_title span{
+        font-size: 2.5rem;
+    }
+    .kia_sub_title{
+        font-size: 1.5rem;
+    }
+    .kia_exterior_text2 span{
+        font-size: 2.5rem;
+    }
+    .kia_exterior_text2 span:last-of-type{
+        font-size: 1.5rem;
+    }
+    .kia_interior_sub_title span{
+        font-size: 2rem;
+        font-weight: lighter;
+    }
+    .kia_interior_sub_title{
+        font-size: 1.5rem;
+    }
+    .kia_interior_text{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:1500px){
+    #menu>li{
+        padding: 0 50px;
+    }
+    /* exterior */
+    .kia_title{
+        font-size: 3rem;
+    }
+    /* interior */
+    .kia_interior_listbox>.kia_title{
+        font-size: 3rem;
+        transform: none;
+        left: -140%;
+        top: 0;
+    }
+    /* event */
+    /* .kia_slides li img{
+        width: 60%;
+    } */
+}
+@media screen and (max-width:1400px){
+    #menu>li{
+        padding: 0 40px;
+    }
+    .kia_sub_car_btn strong{
+        font-size: 1.1rem;
+        left: 5%;
+    }
+    .kia_sub_car_all>.kia_sub_car_btn>span a{
+        font-size: 1rem;
+    }
+    /* .kia_slides li img{
+        width: 50%;
+    } */
+    
+}
+@media screen and (max-width:1260px){
+    #menu>li{
+        padding: 0 30px;
+        font-size: 1.2rem;
+    }
+    .kia_sub_car_btn strong{
+        font-size: 1rem;
+    }
+    .kia_sub_car_all>.kia_sub_car_btn>span a{
+        font-size: 0.9rem;
+    }
+    .kia_car_explainBox>span{
+        font-size: 1.2rem;
+    }
+    .kia_car_explainBox>p{
+        font-size: 0.9rem;
+    }
+    .kia_eximg>.kia_btn li img{
+        width: 85px;
+    }
+    .kia_interior_sub_title{
+        font-size: 1.3rem;
+    }
+    .kia_notice_list li a:hover .notice_front{
+        transform: scale(2.0);
+    }
+}
+@media screen and (max-width:960px){
+    /* fixed제거!!!! */
+    .fixbox{
+        display: none;
+    }
+    /* 해더 높이 제거 */
+    header{
+        padding: 0;
+    }
+    #menu{
+        width: 100%;
+        display: none;
+        height: calc(100vh - 50px);
+        background-color: rgb(102, 102, 102);
+    }
+    #menu>li{
+        width: 100%;
+        background-color: rgba(129, 129, 129);
+        padding: 20px 0;
+    }
+    #menu>li>a{
+        font-size: 1.2rem;
+    }
+    #menu>li:hover>.kia_sub_menu1,
+    #menu>li.on>.kia_sub_menu1{
+     display: none;
+    }
+    /* 모바일 소메뉴 */
+    .kia_sub_car_box{
+        height: 40%;
+    }
+    .kia_sub_car_btn{
+        height: 60%;
+    }
+    .kia_sub_car_btn p{
+        font-size: 1.2rem;
+    }
+    .kia_sub_car_btn p:last-of-type{
+        font-size: 0.8rem;
+    }
+    .kia_sub_car_btn strong{
+        top: 5%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .kia_sub_car_btn span{
+        left: 5px;
+    }
+    .kia_sub_car_all>.kia_sub_car_btn>span a{
+        font-size: 0.9rem;
+    }
+    .kia_sub_menu_title li a{
+        font-size: 1rem;
+    }
+    .smore{
+        width: 60%;
+        height: 30px;
+        line-height: 0;
+    }
+    .smore a{
+        font-size: 0.8rem;
+        line-height: 30px;
+    }
+    /* 모바일메뉴끝 */
+    .wide_inner_box{
+        height: 50px;
+        position: relative;
+    }
+    .kia_ham{
+        /* display: block; */
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 3%;
+    }
+    nav{
+        /* left: -100%; */
+        /* display: none; */
+    }
+    #menu li:hover,
+    #menu>li.on{
+	    background: rgba(255,255,255, 0.8);
+        
+    }   
+    #menu{
+        /* left: -100%; */
+    }
+    .kia_m_logo{
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        margin: auto;
+    }
+    .kia_logo{
+        display: none;
+    }
+    .kia_m_icon{
+        display: block;
+        position: absolute;
+        right: 1%;
+        top: 50%;
+        transform: translateY(-50%);
+    }s
+    .kia_main_slide{
+        margin-top: -100px;
+    }
+
+    .kia_image{
+        display: none;
+    }
+    .m_kia_image{
+        display: block;
+        min-height: 200px;
+    }
+    /* 첫 메인메뉴 */
+    .kia_weather_slide{
+        height: 88vh;
+    }
+    .kia_weather_slide>li{
+        width: 100%;
+        float: none;
+        height: 22vh;
+        transform: skewX(0);
+        transition: 2s;
+    }
+    .kia_weather_slide>li:hover>img{
+        transform: none;
+    }
+    .kia_weather_slide>li img{
+        width: 100%;
+        left: 0;
+        transform: none;
+    }
+    .kia_weather_slide>li:nth-of-type(2) img{
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+    .kia_weather_slide>li:nth-of-type(3) img{
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+    .kia_weather_slide>li:nth-of-type(4) img{
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+    .kia_weather_slide>li:nth-of-type(2):hover img{
+        transform: none;
+    }
+    .kia_weather_slide>li:nth-of-type(3):hover img{
+        transform: none;
+    }
+    .kia_weather_slide>li:nth-of-type(4):hover img{
+        transform: none;
+    }
+    .kia_weather_slide>li:first-child>.kia_main_slide_title{
+        left: 40%;
+    }
+    .kia_weather_slide>li>.kia_main_slide_title{
+        left: 40%;
+    }
+    .kia_weather_slide>li:last-child>.kia_main_slide_title{
+        left: 40%;
+    }
+    .scroll{
+        margin: 20px;
+    }
+    /* 비디오 슬라이드 */
+    #video{
+        width: 100vw;
+    }
+    .grid1>.kia_video_title{
+        font-size: 2rem;
+    }
+    .grid5 span{
+        font-size: 2rem;
+    }
+    .grid5 a{
+        left: 50%;
+        transform:translateX(-50%);
+        height: auto;
+    }
+    .kia_pause{
+        top: 20%;
+    }
+
+    /* 차량 소개 페이지 */
+    .kia_twopage{
+        height: auto;
+    }
+    .kia_Box{
+    }
+    .kia_model_title{
+        padding-top: 3rem;
+        font-size: 2rem;
+    }
+    .kia_model_subtitle{
+        font-size: 1.2rem;
+    }
+    .kia_cars_name li span{
+        width: 20vw;
+        font-size: 1.5rem;
+    }
+    .kia_car_pic img{
+        min-width: 300px;
+    }
+    .kia_cars_arrow{
+        top: 35vh;
+    }
+    .kia_cars_arrow>.leftBtn{
+        margin-left: 5%;
+    }
+    .kia_cars_arrow>.rightBtn{
+        margin-right: 5%;
+    }
+    .kia_car_explain{
+        /* width: 100%;
+        bottom: 10%; */
+        top: -100px;
+        left: 0;
+        transform: none;
+    }
+    .kia_car_explainBox>p{
+        font-size: 0.8rem;
+    }
+    .kia_car_explain>.kia_car_explainBox{
+        width: 50%;
+        margin: auto;
+        border: 1px solid #111;
+        box-sizing: border-box;
+    }
+    .kia_cars_arrow>.rightBtn img,
+    .kia_cars_arrow>.leftBtn img{
+        width: 1.5rem;
+    }
+    .bannerBtn{
+        bottom: 25%;
+    }
+    .bannerBtn>li>a{
+        width: 15px;
+        height: 15px;
+    }
+    /*  */
+    .m-nav-header{
+        display: block;
+    }
+    .innerbox_icon{
+        display: none;
+    }
+
+    /* kia 외부페이지 */
+    .kia_title{
+        position: absolute;
+        top: 0 !important;
+        left: 3%;
+        font-size: 2rem;
+    }
+    
+    .kia_exterior_box{
+        width: 100%;
+        top: 6vh;
+        height: 90vh;
+    }
+    .kia_exterior_contents{
+        width: 100%;
+        height: 100%;
+    }
+    .kia_eximg{
+        width: 100%;
+        height: 65%;
+        top: 25%;
+        transform: translateY(-25%);
+    }
+    .kia_sub_title{
+        margin-top: 0;
+        font-size: 1.1rem;
+    }
+    .kia_exterior_text1, .kia_exterior_text2{
+        font-size: 1rem;
+    }
+    .kia_exterior_text2{
+        float: left;
+        text-align: left;
+        margin-top: 0;
+    }
+    .kia_exterior_text2 span:last-of-type{
+        display: none;
+    }
+    .kia_exterior_contents>ul{
+        width: 100%;
+        position: absolute;
+        bottom: 5%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .kia_exterior_contents>ul li{
+        width: 20%;
+    }
+    .kia_exterior_contents>p{
+        position: absolute;
+        bottom: 0;
+    }
+    /* kia 내부페이지 */
+    .kia_interior_box{
+        width: 100%;
+        top: 0;
+    }
+    .kia_inimg{
+        position: static;
+        width: 100%;
+        height: 80%;
+    }
+    .kia_inimg img{
+        top: 40%;
+    }
+    .kia_interior_listbox{
+        width: 100%;
+        position: static;
+        height: auto;
+        margin-right: 0;
+    }
+    .kia_interior_contents{
+        text-align: left;
+        margin-top: 0;
+    }
+    .kia_interior_contents>ul{
+        display: flex;
+        justify-content: space-around;
+    }
+    .kia_interior_contents>ul li{
+        width: 20%;
+    }
+    .kia_interior_text{
+        margin-bottom: 0;
+    }
+    .kia_interior_listbox>.kia_title{
+        font-size: 2rem;
+        transform: none;
+        left: 30px;
+        top: 30px !important;
+    }
+    .kia_interior_contents>.kia_more{
+        bottom: -100px;
+        right: 10px;
+    }
+    .kia_interior_sub_title{
+        font-size: 1.2rem;
+    }
+    /* event */
+    .kia_event{
+        width: 100%;
+    }
+    .kia_event_box{
+        padding: 50px 0;
+    }
+    .kia_notice{
+        width: 100%;
+    }
+    .kia_notice_list{
+        flex-direction: column;
+    }
+    .kia_notice_list li{
+        margin: 1px 0;
+    }
+    .notice_front{
+        padding: 0;
+        transform: scale(1);
+    }
+    /* 모바일 푸터 */
+    .kia_kind{
+        font-size: 1.4rem;
+        color: #f1f1f1;
+    }
+    .kia_kind_list li{
+        margin-left: 5%;
+    }
+    .kia_kind_list li a{
+        font-size: 1.1rem;
+    }
+    .kia_kind_2 li{
+        float: left;
+        margin-right: 5%;
+    }
+
+}
+@media screen and (max-width:640px){
+    .kia_sub_menu_title li a{
+        font-size: 0.8rem;
+    }
+    .kia_car_explainBox>span{
+        font-size: 1rem;
+    }
+    .kia_exterior_contents ul li p{
+        display: none;
+    }
+    .kia_exterior_contents>ul{
+        bottom: 12%;
+    }
+    .m_kia_sub_text span{
+        display: block;
+        font-size: 2rem;
+    }
+    /* .kia_eximg>.kia_btn li img{
+        width: 70px;
+    } */
+    .m_kia_sub_text{
+        display: block;
+        font-size: 0.9rem;
+    }
+    .kia_more a{
+        width: 8rem;
+        height: 2.5rem;
+        font-size: 1rem;
+        line-height: 2.5rem;
+    }
+
+    /* interior */
+    .kia_interior{
+        height: auto;
+    }
+    .kia_interior_box{
+        height: 80vh;
+    }
+    .kia_interior_sub_title{
+        font-size: 0.9rem;
+    }
+    .kia_interior_text{
+        display: none;
+    }
+    .kia_interior_contents>ul li{
+        position: relative;
+    }
+    .kia_inimg{
+        height: 70%;
+    }
+    .kia_inimg img{
+        /* top: 30%; */
+    }
+    .kia_interior_contents>.kia_more{
+        bottom: 0;
+    }
+    /* footer */
+    .kia_kind_list li,strong{
+        padding: 20px 10px;
+    }
+    .kia_kind_2 li{
+        /* background-color: red; */
+        border-bottom: 1px solid rgba(92, 90, 88, 0.5);
+        padding: 20px 10px;
+        float: none;
+        margin-right: auto;
+    }
+    .kia_kind_2 li a{
+        font-size: 1rem;
+    }
+    .kia_kind_3{
+        display: flex;
+    }
+    .kia_kind_3 li{
+        padding: 10px;
+        float: none;
+        margin-right: auto;
+    }
+    .kia_foot_1 p{
+        font-size: 0.7rem;
+        padding: 30px 10px;
+    }
+    .kia_foot_logo{
+        padding: 100px 0;
+    }
+}
+@media screen and (max-width:480px){
+    #menu>li>a{
+        font-size: 1.1rem;
+    }
+    .kia_sub_menu_title{
+        width: 30%;
+    }
+    .kia_sub_menu_list{
+        width: 70%;
+    }
+    .kia_sub_menu_bg{
+        padding-bottom: 150px;
+    }
+    .kia_sub_car{
+        margin-top: 0;
+    }
+    .kia_sub_car_all{
+        width: 80%;
+        margin-top: 3%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+
+    .kia_sub_car_box{
+        height: 60%;
+    }
+    .kia_sub_car_btn{
+        height: 40%;
+    }
+    .kia_sub_car_btn p{
+        display: none;
+    }
+    .kia_sub_car_btn span{
+        /* display: none; */
+        padding: 5px 15px 10px;
+    }
+    .kia_weather_slide>li>.kia_main_slide_title{
+        font-size: 1.5rem;
+    }
+    .grid5 a{
+        font-size: 2rem;
+    }
+    .kia_cars_name li span{
+        font-size: 1.2rem;
+    }
+    .kia_eximg>.kia_btn li img{
+        width: 60px;
+    }
+    .kia_btn{
+        width: 100%;
+        
+        top: auto;
+    }
+    .kia_btn>img{
+        width: 20%;
+    }
+    .kia_exterior_contents>ul{
+        bottom: 8%;
+    }
+    .kia_interior_contents>ul{
+        bottom: 25%;
+    }
+    .kia_interior_sub_title{
+        font-size: 0.9rem;
+    }
+    .kia_kind_list li{
+        padding: 20px 0;
+        border-left: none;
+    }
+    .kia_kind_list li a{
+        font-size: 0.8rem;
+    }
+    .kia_kind_3 li {}
+    .kia_kind_3 li a{
+        font-size: 0.8rem;
+    }
+}
